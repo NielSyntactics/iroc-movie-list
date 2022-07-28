@@ -6,7 +6,7 @@ const movie = () => {
 
     const fetchMovie = async (searchTerm) => {
         try {
-            const res = await fetch(`http://www.omdbapi.com/?s=${searchTerm}&apikey=${process.env.VUE_APP_API_KEY}`);
+            const res = await fetch(`https://www.omdbapi.com/?s=${searchTerm}&apikey=${process.env.VUE_APP_API_KEY}`);
             const data = await res.json();
             if(data.Response == "True") {
                 movies.value = data.Search;
