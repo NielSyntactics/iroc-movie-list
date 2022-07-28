@@ -1,26 +1,18 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<template> 
+  <div class="flex justify-center items-center md:min-h-screen md:p-5">
+    <MovieComponentVue/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MovieComponentVue from './components/MovieComponent.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MovieComponentVue
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
