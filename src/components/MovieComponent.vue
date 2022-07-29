@@ -1,7 +1,7 @@
 <template>
     <div class="mx-auto p-3 md:container w-full lg:w-3/5 sms:w-5/6 md:w-4/5 md:border md:rounded-lg bg-gray-900">
         <SearchComponentVue @find-movie="fetchMovie" />
-        <MovieListComponent :movies="movies"/>
+        <MovieListComponent :movies="movies" />
     </div>
 </template>
 
@@ -18,10 +18,10 @@ export default {
     },
     setup() {
         const { movies, fetchMovie } = movie();
-
+      
         return {
             movies,
-            fetchMovie
+            fetchMovie,
         }
     },
 }

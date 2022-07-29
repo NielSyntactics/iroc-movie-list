@@ -12,7 +12,11 @@ module.exports = {
       lg: '876px',
       xl: '1440px'
     },
-    extend: {},
+    extend: {
+      colors: {
+        greenBackground: '#03cc85',
+      },
+    },
   },
   plugins: [],
 }
